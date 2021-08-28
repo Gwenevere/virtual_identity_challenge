@@ -5,7 +5,7 @@ import nodeSassPackageImporter from 'node-sass-package-importer';
 // https://stenciljs.com/docs/config
 
 export const config: Config = {
-  namespace: 'component-library-template',
+  namespace: 'virtual-identity-challenge',
   hashFileNames: false,
   globalScript: 'src/global/app.ts',
   globalStyle: 'src/global/app.scss',
@@ -39,7 +39,7 @@ export const config: Config = {
     shadowDomShim: true,
   },
   plugins: [
-    sass({ 
+    sass({
       importer: nodeSassPackageImporter(),
       injectGlobalPaths: [
         'src/global/app.scss',
