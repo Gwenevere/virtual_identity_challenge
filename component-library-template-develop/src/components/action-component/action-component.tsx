@@ -25,7 +25,7 @@ export class ActionComponent {
             <div class="InformationWrapper"> 
               <p class="InformationText"> A wonderful serenity has taken possession </p>
               <p> A wonderful serenity has taken possession of my entire soul, like these sweet moments </p>
-              <button type="button" name="link_button" class="link_btn" onClick={() => this.open=true}> Link button </button>
+              <button type="button" name="link_button" class="LinkButton" onClick={() => this.open=true}> Link button </button>
             </div>
           </div>
           <div class="ImageContainer">
@@ -39,7 +39,7 @@ export class ActionComponent {
               <p class="ContactText"> Contact us </p>
             </div>
           </div>
-          <button class="close-button" aria-label="Close alert" type="button"  onClick={() => this.open=false} data-close>
+          <button class="CloseButton" aria-label="Close alert" type="button"  onClick={() => this.open=false} data-close>
             <span aria-hidden="true">&times;</span> Close
           </button>
         </div>
