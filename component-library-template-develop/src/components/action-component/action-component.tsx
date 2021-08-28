@@ -29,7 +29,6 @@ export class ActionComponent {
             </div>
           </div>
           <div class="ImageContainer">
-            {/** ADD LOCAL IMAGE*/}
           </div>
         </div>
         <div hidden={!this.open} class="ContactContainer">
