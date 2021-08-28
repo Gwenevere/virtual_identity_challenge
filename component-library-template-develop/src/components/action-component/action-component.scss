@@ -28,7 +28,9 @@
 
   display: flex;
 
-  background-color: red;
+  font-family: "Playfair Display", serif;
+
+  background-color: #ecede9;
 
   .InformationContainer {
     width: 50%;
@@ -38,26 +40,57 @@
     justify-content: center;
     align-items: center;
 
-    background-color: green;
-
     .InformationWrapper {
       width: 65%;
+
+      .InformationText {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .LinkButton {
+        background-color: black;
+        color: white;
+
+        border: none;
+        padding: 10px 20px;
+
+        cursor: pointer;
+
+        font-size: 12px;
+      }
     }
   }
 
   .ImageContainer {
     width: 50%;
+
+    background: center no-repeat
+      url(https://meccms.wpengine.com/wp-content/uploads/2016/12/navigate-using-stars-night-sky-800x320.jpg?v=1493158527);
+    background-size: fill;
   }
 }
 
 .ContactContainer {
   width: 100%;
   height: 200px;
-  
-  background-color: yellow;
+
+  position: relative;
+
+  margin-top: 20px;
+
+  background-color: #303c54;
+  color: white;
+
+  font-family: "Roboto Condensed", sans-serif;
   
   .ContactWrapper {
     width: 50%;
+
     display: flex;
     justify-content: center;
 
@@ -67,13 +100,98 @@
       .ArrowUp {
         width: 0;
         height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid yellow;
 
         position: absolute;
         top: -20px;
+
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #303c54;
+      }
+
+      .ContactText {
+        font-size: 24px;
+        font-weight: bold;
       }
     }
   }
+
+  .CloseButton {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+
+    background-color: transparent;
+    color: white;
+
+    border: none;
+
+    font-size: 12px;
+
+    cursor: pointer;
+  }
 }
+
+@media (max-width: 767px) {
+  
+  
+  .HeadlineContainer {
+      .HeadlineWrapper {
+  
+        width: 100%;
+        
+        .HeadlineText {
+  
+          width:100%;
+  
+          h1 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  
+    .MainContentContainer {
+  
+      flex-direction: column-reverse;
+      height: auto;
+  
+      .InformationContainer {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+  
+      .ImageContainer {
+        min-height: 200px;
+        width: 100%;
+        background-size: fill;
+        
+      }
+    }
+  
+    .ContactContainer {
+      .ContactWrapper {
+  
+        padding-top: 20px;
+  
+        .ContactHeader {
+          .ArrowUp {
+            top: -15px;
+
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #303c54;
+            
+          }
+  
+          .ContactText {
+            font-size: 16px;
+          }
+        }
+      }
+  
+      .close-button {
+        top: 40px;
+      }
+    }
+  }
